@@ -1,8 +1,8 @@
-import { useState } from "react"
+import { useState } from "react" //useState è un hook di React, Serve per gestire lo stato, cioè dei dati che possono cambiare nel tempo.
 import { Alert, Container, Row, Col } from "react-bootstrap"
 
 const MyAlert = function () {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(true) // show è una variabile che dice se mostrare l'alert
 
   if (show) {
     return (

@@ -1,12 +1,12 @@
-import books from "../data/history.json"
+/*import books from "../data/history.json"*/
 
 import { Card, Button, Container, Row, Col } from "react-bootstrap"
 
-const AllTheBooks = function () {
+const AllTheBooks = function (props) {
   return (
     <Container className="my-4">
       <Row className="justify-content-start g-3">
-        {books.map((oneBook) => {
+        {props.books.map((oneBook) => {
           return (
             <Col sm={12} md={6} lg={3} key={oneBook.asin}>
               <Card className="h-100">
